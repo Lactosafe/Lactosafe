@@ -1,4 +1,4 @@
-const fetchdashboard = async () => {
+const adminService = async () => {
     let participants1 = {
         firstName: 'Adam',
         secondName: 'Gilchrist',
@@ -87,5 +87,5 @@ const fetchdashboard = async () => {
 
 
 module.exports = {
-    fetchdashboard: fetchdashboard
+    adminService: adminService
 };

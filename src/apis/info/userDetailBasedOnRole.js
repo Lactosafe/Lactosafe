@@ -5,7 +5,7 @@ const userDetailBasedOnRole = async (req, res) => {
     let role = '';
     if (req.params.role === 'admin') {
 
-        const { networkParticipant, adminTransaction, approvalPending } = await adminService.fetchdashboard();
+        const { networkParticipant, adminTransaction, approvalPending } = await adminService.adminService();
 
         res.status(200).json({
             statusMessage: "Success",
