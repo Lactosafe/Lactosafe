@@ -1,6 +1,6 @@
-const adminService = require("./../../service/adminService");
+const adminService = require("../../service/adminService");
 
-const fetchdashboard = async (req, res) => {
+const userDetailBasedOnRole = async (req, res) => {
     console.log("get started")
     let role = '';
     if (req.params.role === 'admin') {
@@ -18,4 +18,4 @@ const fetchdashboard = async (req, res) => {
 
 };
 
-module.exports = fetchdashboard;
+module.exports = userDetailBasedOnRole;

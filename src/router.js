@@ -2,7 +2,7 @@ const express = require("express");
 
 const signup = require("./apis/signup");
 const fetchrole = require("./apis/fetchrole");
-const fetchdashbord = require("./apis/dashboards/fetchdashboard");
+const userDetailBasedOnRole = require("./apis/info/userDetailBasedOnRole");
 
 const router = express.Router();
 
@@ -17,6 +17,6 @@ const asyncRoute = (routeHandler) => async (req, res, next) => {
 
 router.post("/apis/signup", asyncRoute(signup));
 router.get("/apis/fetchrole", asyncRoute(fetchrole));
-router.get("/apis/dashboards/:role", asyncRoute(fetchdashbord));
+router.get("/apis/info/:role", asyncRoute(userDetailBasedOnRole));
 
 module.exports = router;
