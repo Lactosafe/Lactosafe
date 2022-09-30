@@ -3,7 +3,7 @@
 const fetchrole = async (req, res) => {
     console.log("get started")
     let role = '';
-    if (req.params.email === 'pragati.mrinal@gmail.com') {
+    if (req.query.email === 'pragati.mrinal@gmail.com') {
         role = 'admin'
     }
 
