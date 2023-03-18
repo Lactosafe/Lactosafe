@@ -1,5 +1,5 @@
 const adminService = require("../../service/adminService");
-const farmerService = require("../../service/farmerService");
+//const farmerService = require("../../service/farmerService");
 
 const userDetailBasedOnRole = async (req, res) => {
     console.log("get started")
@@ -16,7 +16,7 @@ const userDetailBasedOnRole = async (req, res) => {
         });
 
     }
-    if (req.params.role === 'farmer') {
+    /*if (req.params.role === 'farmer') {
 
         const { networkParticipant, adminTransaction, approvalPending } = await farmerService.fetchfarmerDetail();
 
@@ -27,7 +27,7 @@ const userDetailBasedOnRole = async (req, res) => {
             approvalPending: approvalPending
         });
 
-    }
+    }*/
 
 };
 

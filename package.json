@@ -8,7 +8,7 @@
     "lintStaged": "lint-staged",
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "clientLocal": "node client/data/writeJson.js local",
+    "clientLocal": "node client/data/writeJson.js",
     "test": "mocha --config test/.mocharc.js",
     "tdd": "mocha --config test/.tdd_mocharc.js",
     "docs": "node compileDocs.js"
