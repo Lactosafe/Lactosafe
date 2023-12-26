@@ -10,9 +10,12 @@ const userDetailBasedOnRole = async (req, res) => {
 
         res.status(200).json({
             statusMessage: "Success",
-            networkParticipant: networkParticipant,
-            adminTransaction: adminTransaction,
-            approvalPending: approvalPending
+            data:{
+                networkParticipant: networkParticipant,
+                adminTransaction: adminTransaction,
+                approvalPending: approvalPending
+            }
+            
         });
 
     }

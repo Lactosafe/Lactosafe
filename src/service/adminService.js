@@ -1,6 +1,6 @@
 
 const jsonfile = require('jsonfile');
-const file = '/Users/prmri/Learning/Lactosafe/client/data/data.json'
+const file = '/Users/vekum7/My Project/Lactosafe/client/data/data.json'
 
 const fetchAdminDetail = async () => {
 
@@ -28,7 +28,7 @@ const fetchAdminDetail = async () => {
             console.log(err);
         });
 
-
+console.log('networkParticipant',networkParticipant)
     return {
         networkParticipant: networkParticipant,
         adminTransaction: adminTransaction,
